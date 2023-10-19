@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container ">
+        <h1>SIGNUP</h1>
+        <form class="form" action="login.html" onsubmit="return validate()">
+            <div class="input-field">
+                <input type="text" class="form-control" placeholder="ENTER YOUR NAME" id="name" >
+                <label for="name" id="namelabel"></label>
+            </div>
+            <div class="input-field">
+                <input type="email" class="form-control " placeholder="ENTER YOUR EMAIL" id="email"  >
+                <label for="email" id="emaillabel"></label>
+            </div>
+            <div class="input-field">
+                <input type="password" class="form-control" placeholder="ENTER YOUR PASSWORD" id="pwd" maxlength="8" >
+                <label for="pwd" id="pwdlabel"></label>
+            </div>
+            <div class="input-field">
+                <input type="password" class="form-control" placeholder="ENTER CONFIRM PASSWORD" id="cpwd" maxlength="8" >
+                <label for="cpwd" id="cpwdlabel"></label>
+            </div>
+            
+            <button class="btn bg-primary text-white"  >SUBMIT</button>
+
+        </form>
+    </div>
+    <script src="signup.js" ></script>
+
+    <script src="js/bootsrap.min.js"></script>
+</body>
+</html>

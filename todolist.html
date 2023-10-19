@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TO DO LIST</h1>
+        <input type="text" id="input">
+        <button onclick="add()" class="btn">Add</button>
+        <ul id="ullist">
+            <li>hii how are you<button onclick="remove(event)" class="btn bg-primary text-white ms-5">X</button></li>
+
+        </ul>
+    </div>
+    <script>
+        let input=document.getElementById("input")
+        let ul=document.getElementById("ullist")
+        function add()
+        {
+            let li=document.createElement("li")
+            li.innerHTML=input.value+'<button onclick="remove(event)" class="btn bg-primary text-white ms-5">X</button>'
+            ul.append(li)
+        }   
+        function remove(event)
+        {
+            event.target.parentElement.remove()
+        }
+    </script>
+    
+</body>
+</html>

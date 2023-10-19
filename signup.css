@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(98, 98, 211);
+}
+.container{
+    width: 250px;
+    height: 325px;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    
+    
+    
+}
+.input-field label{
+    color: rgb(0, 0, 0);
+    font-size: .9rem;
+    
+    
+}
+.input-field input {
+    border: 1px black solid;
+    font-size: .7rem;  
+    border: none; 
+    border-bottom: 1px black solid;
+    border-radius:0%;
+    outline: red;
+}
+.form-control{
+    outline: none ;
+}
+
+.btn{
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+
